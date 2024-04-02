@@ -6,18 +6,18 @@ This project is the assessment for the Healthcare and BI Analyst role.
 	- Note that I have saved the AWS keys as environment variables -- the data will not be accessible to someone without the keys.
 
 2) <b>task1.py</b>
-	- <b><i>Inputs/dependencies:</i></b>
+	- <i>Inputs/dependencies:</i>
 		- Uses patient_id_month_year.csv from the Waymark S3 bucket
 		- Uses read_file function from read_file_aws.py
-	-  <b><i>Outputs:</i></b>
+	-  <i>Outputs:</i>
 		- Generates patient_enrollment_span.csv locally
 
 3) <b>task2.py</b>
-	- Inputs/dependencies:
+	- <i>Inputs/dependencies:</i>
 		- Uses local file csv/patent_enrollment_span.csv (need to ensure this file is up-to-date, or re-run task1.py before running task2.py)
 		- Uses outpatient_vists_file.csv from the Waymark S3 bucket
 		- Uses read_file function from read_file_aws.py
-	- Outputs:
+	- <i>Outputs:</i>
 		- Generates result.csv locally
 
 <b>CSV files (in csv folder):</b>
