@@ -107,6 +107,6 @@ result = pd.read_sql_query(get_result_qry, conn)
 # Save to csv
 result.to_csv('csv/result.csv', index=False) 
 
-# Print the number of rows (Answer 2)
+# Print the number distinct values (Answer 2)
 print(result['ct_days_with_outpatient_visit'].nunique())
 
