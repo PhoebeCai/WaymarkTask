@@ -74,7 +74,7 @@ outpatient_visits_file.to_sql('outpatient_visits_file', conn, index=False)
 
 ####################
 # SQL Query (with explanation)
-# This generates the results df
+# This generates the result df
 ####################
 # Group by: patient id, start date, and end date -- this identifies each enrollment
 #           period for a patient
