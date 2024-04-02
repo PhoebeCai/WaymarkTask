@@ -21,9 +21,10 @@ This project is the assessment for the Healthcare and BI Analyst role.
 		- Generates result.csv locally
 
 <b>CSV files (in csv folder):</b>
-These are the two files we are asked to produce in the assignment.
+
+These are the two files we are asked to produce in the assignment. (I won't describe them here, since they are already documented in the assignment sheet)
 1) <b>patient_enrollment_span.csv</b>
-2) <b>result.csv</b>,
+2) <b>result.csv</b>
 
 <b>Design choices:</b>
 - I choose not to save patient_id_month_year.csv and outpatient_visits_file.csv locally and instead work directly with them in pandas
