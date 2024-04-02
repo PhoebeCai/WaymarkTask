@@ -19,6 +19,6 @@ Files:
 
 
 Design choices:
-	- I choose not to save patient_id_month_year and outpatient_visits_file locally as csvs and instead work directly with them in pandas, but under certain circumstances (e.g. it is very slow to fetch something and it is updated infrequently), it could make sense to save a copy locally and work with that.
-	- If there were more complex dependencies or redundancies (or any part of this task were very slow), I would think further about how to best break the tasks into separate scripts and write functions to automate any repetitive parts.
-		- Right now, there are two scripts, and the second one uses the csv that I created in the first one. This is slightly slower than just writing one long script where I continue to work with the df from step 1, but I break the tasks up for readability.
+- I choose not to save patient_id_month_year and outpatient_visits_file locally as csvs and instead work directly with them in pandas, but under certain circumstances (e.g. it is very slow to fetch something and it is updated infrequently), it could make sense to save a copy locally and work with that.
+- If there were more complex dependencies or redundancies (or any part of this task were very slow), I would think further about how to best break the tasks into separate scripts and write functions to automate any repetitive parts.
+	- Right now, there are two scripts, and the second one uses the csv that I created in the first one. This is slightly slower than just writing one long script where I continue to work with the df from step 1, but I break the tasks up for readability.
