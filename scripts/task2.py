@@ -22,8 +22,8 @@ from dateutil.relativedelta import relativedelta
 # Reading the csvs
 ####################
 # Reading the csv I created
-patient_enrollment_span = pd.read_csv('csv/patient_enrollment_span.csv', dtype={
-    'patient_id': 'string',
+patient_enrollment_span = pd.read_csv('../csv/patient_enrollment_span.csv',
+    dtype={'patient_id': 'str',
     'enrollment_start_date': 'str',
     'enrollment_end_date': 'str'})
 
@@ -105,7 +105,7 @@ get_result_qry = '''
 result = pd.read_sql_query(get_result_qry, conn)
 
 # Save to csv
-result.to_csv('csv/result.csv', index=False) 
+result.to_csv('../csv/result.csv', index=False) 
 
 # Print the number distinct values (Answer 2)
 print(result['ct_days_with_outpatient_visit'].nunique())

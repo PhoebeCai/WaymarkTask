@@ -1,6 +1,6 @@
 This project is the assessment for the Healthcare and BI Analyst role. 
 
-Files:
+Scripts (in scripts folder):
 1) read_file_aws.py: Contains the function read_file, which reads csv files from S3 buckets
 	- This is referenced in the task1 and task2 scripts.
 	- Note that I have saved the AWS keys as environment variables -- the data will not be accessible to someone without the keys.
@@ -10,17 +10,20 @@ Files:
 		- Uses patient_id_month_year.csv from the Waymark S3 bucket
 		- Uses read_file function from read_file_aws.py
 	- Outputs:
-		- Generates csv/patient_enrollment_span.csv locally
+		- Generates patient_enrollment_span.csv locally
 
 3) task2.py
 	- Inputs/dependencies:
-		- Uses csv/patent_enrollment_span.csv (need to ensure this file is up-to-date, or re-run task1.py before running task2.py)
+		- Uses local file csv/patent_enrollment_span.csv (need to ensure this file is up-to-date, or re-run task1.py before running task2.py)
 		- Uses outpatient_vists_file.csv from the Waymark S3 bucket
 		- Uses read_file function from read_file_aws.py
 	- Outputs:
-		- Generates csv/result.csv locally
+		- Generates result.csv locally
 
-
+CSV files (in csv folder):
+These are the two files we are asked to produce in the assignment.
+1) patient_enrollment_span.csv
+2) result.csv
 
 Design choices:
 - I choose not to save patient_id_month_year.csv and outpatient_visits_file.csv locally and instead work directly with them in pandas

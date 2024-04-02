@@ -88,7 +88,7 @@ patient_enrollment_span['enrollment_end_date'] = np.array([d + relativedelta(mon
 
 # Remove any unnecessary columns and save to csv
 patient_enrollment_span = patient_enrollment_span[['patient_id', 'enrollment_start_date', 'enrollment_end_date']]
-patient_enrollment_span.to_csv('csv/patient_enrollment_span.csv', index=False) 
+patient_enrollment_span.to_csv('../csv/patient_enrollment_span.csv', index=False) 
 
 # Print the number of rows (Answer 1)
 print(len(patient_enrollment_span.index))
