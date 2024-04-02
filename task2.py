@@ -27,15 +27,13 @@ patient_enrollment_span = pd.read_csv('csv/patient_enrollment_span.csv', dtype={
     'enrollment_start_date': 'str',
     'enrollment_end_date': 'str'})
 
-# I've stored the keys (from the instructions) as environment variables to avoid publicizing them
-# Fetching the keys
+# Fetching AWS keys (I stored as environment variables)
 waymark_task_key_id = os.environ.get('waymark_task_key_id')
 waymark_task_secret_key = os.environ.get('waymark_task_secret_key')
 bucket_name = 'waymark-assignment'
 
-# I have another file called read_file_aws.py - it has a function read_file,
-# which reads files from s3 buckets.
-# I've imported that functon, and here I read the outpatient_vsit_files csv
+# I imported a function read_file, which reads csvs from s3 buckets.
+# Reading outpatient_vsit_files csv
 outpatient_visits_file = read_file(bucket_name, 'outpatient_visits_file.csv', 
                                    waymark_task_key_id, waymark_task_secret_key)
 
