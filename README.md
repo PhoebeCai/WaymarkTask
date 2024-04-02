@@ -14,7 +14,7 @@ This project is the assessment for the Healthcare and BI Analyst role.
 
 3) <b>task2.py</b>
 	- <i>Inputs/dependencies:</i>
-		- Uses local file <b>csv/patent_enrollment_span.csv</b> (need to ensure this file is up-to-date, or re-run <b>task1.py</b>before running <b>task2.py</b>)
+		- Uses local file <b>csv/patent_enrollment_span.csv</b> (need to ensure this file is up-to-date, or re-run <b>task1.py</b> before running <b>task2.py</b>)
 		- Uses <b>outpatient_vists_file.csv</b> from the Waymark S3 bucket
 		- Uses read_file function from <b>read_file_aws.py</b>
 	- <i>Outputs:</i>
